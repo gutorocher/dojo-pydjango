@@ -5,11 +5,8 @@
 # aqui serão implemntada
 
 # a conversão numerica
-# de decimal para romano
 # de romano para decimal
 # verificação de valores romanos inválidos
-
-#implementar interface grafica para projeto futuro...
 
 class Conversor(object):
 
@@ -34,11 +31,11 @@ class Conversor(object):
             
     def identificaRomano(self,valor):
         if valor == 'I':
-            return lista[0]
+            return resultante[0]
         elif valor == 'V':
-            return lista[1]
+            return resultante[1]
         elif valor == 'X':
-            return lista[2]
+            return resultante[2]
         else:
             print "valor invalido"
 
