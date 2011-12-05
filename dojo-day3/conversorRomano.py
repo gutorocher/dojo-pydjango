@@ -5,9 +5,7 @@
 # os seguintes itens.::
 # a conversão numerica
 # de romano para decimal
-# verificação de valores romanos inválidos:
-#tipos numeros e valores como A, B ...
-
+# verificação de valores romanos inválidos
 
 class Conversor(object):
 
@@ -82,5 +80,4 @@ if __name__ == "__main__":
 #    print "valor decimal de VI"
 #    print Conversor().conversorRomanoDecimal('VI')
     
-
 
