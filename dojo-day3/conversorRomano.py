@@ -66,7 +66,7 @@ class Conversor(object):
                 lista = list(valor)
 
                 print " =============================="
-                print " LISTA"
+                print " LISTA ATUAL"
                 print " =============================="
                 print " a lista empresa é: " + str(lista)
                 print " =============================="
