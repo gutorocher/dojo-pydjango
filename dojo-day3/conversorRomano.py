@@ -87,58 +87,7 @@ class Conversor(object):
                     print elemento2
                     print elemento1
                     print  (elemento2) - (elemento1)
-           
-                  
-
-if __name__ == "__main__":
-    
-    #print "valor decimal de V"
-    #print Conversor().conversorRomanoDecimal('V')
-    
-    #print "valor decimal de X"
-    #print Conversor().conversorRomanoDecimal('X')
-    
-    #print "valor decimal de I"
-    #print Conversor().conversorRomanoDecimal('I')
-
-    print "valor decimal de IV"
-    print Conversor().conversorRomanoDecimal('IV')
-    #print "valor decimal de VI"
-                elemento2 = lista[1]
-                #resultado1 = 0
-                #resultado2 = 0
-
-
-                if elemento1 > elemento2:      
-                    
-                    
-                    if lista[0] == 'I':
-                        resultado1 = 1
-                        #return resultado1
-                    elif lista[0]== 'V':
-                        resultado1 = 5
-                        #return resultado1
-                    elif lista[0]== 'X':
-                        resultado1 = 10
-                        #return resultado1
-                   
-                    elif lista[1]== 'I':
-                        resultado2=1
-                        #return resultado2
-                    elif lista[1] == 'V':
-                        resultado2 =5
-                        #return resultado2
-                    elif lista[1]=='X':
-                        resultado2 = 10
-                        #return resultado2
-                   
-                    return  (resultado1) + (resultado2)
-                    
-                else:
-                    if elemento1 < elemento2:
-                        return resultado2 - resultado1
-                    
-       
+            
 
 if __name__ == "__main__":
     
