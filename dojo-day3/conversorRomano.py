@@ -12,8 +12,9 @@ class Conversor(object):
     ''' definir os metodos para a classe para implementar
     as funcionalidade do Conversão de Romano para decimal '''
 
-   resultante = [1,5,10]
-                        
+    resultante = [1,5,10]
+
+                           
     def conversorRomanoDecimal(self,valor):
         if valor is not None:
             # a funcao len verifica o tamanho da string 
@@ -29,8 +30,7 @@ class Conversor(object):
                     return self.resultante [2]
                 else:
                     print "valor invalido para valor de 1 caracter"
-            
-    
+        
     def conversaoDecimal(self):
 
         if lista[0] == 'I':
@@ -58,9 +58,6 @@ class Conversor(object):
             elemento2 = self.resultante[2]
             print elemento2
             return elemento2
-
-
-
             if tamanho == 2:
                 lista = []
                 lista = list(valor)
