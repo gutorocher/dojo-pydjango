@@ -2,41 +2,49 @@
 __author__ = 'gusrocha'
 import math
 
+class CalculaFatorial(object):
 
-def calculaFatorial(valor):
+    def __init__ (self,valor):
+        self.valor = valor
 
-    """
-    calcula o resultado do fatorial, pelo numero
-    passado por paramentro
-    """
-    resultado = math.factorial(valor)
-    print resultado
+
+    def calculaFatorial(self,valor):
+
+        """
+        calcula o resultado do fatorial, pelo numero
+        passado por paramentro
+        """
+        fatorial = math.factorial(valor)
+        print fatorial
 
     
-def fatorial(valor):
+    def fatorial(self):
 
-    fat = valor;
+        fatorial = self.valor
 
-    '''
-    neste local e feito analise que sera
-    percorrido quando estiver o valor maior que 1.
-    '''
-    while (valor >1):
+        '''
+        neste local e feito analise que sera
+        percorrido quando estiver o valor maior que 1.
+        '''
 
-        fat = fat*(valor-1)
-        #efetuado decremento do valor como no calculo do fatorial
-        valor=valor-1
-        #imprime o valor do fatorial em cada interacao
-        print "%s! = %s" % (valor, fat)
+        while (self.valor >1):
+
+            fatorial = fatorial*(self.valor-1)
+            #efetuado decremento do valor como no calculo do fatorial
+            self.valor=self.valor-1
+            #imprime o valor do fatorial em cada interacao
+            print "%s! = %s" % (self.valor, fatorial)
 
 #metodo main do python para chamar a funcao
 if __name__ == '__main__':
+
+    f =  CalculaFatorial(3)
 
     print " =========================="
     print " o valor do fatorial e: "
     print " =========================="
     #chamada da funcao
-    fatorial(4)
+    f.fatorial()
     print " =========================="
     print " o valor do fatorial c/ biblioteca math: "
     print " =========================="
@@ -45,6 +53,6 @@ if __name__ == '__main__':
     passando por parametro o valor do fatorial
     a ser calculado'''
 
-    calculaFatorial(4)
+    f.calculaFatorial(3)
 
 
