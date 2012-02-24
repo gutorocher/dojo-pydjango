@@ -33,26 +33,29 @@ class CalculaFatorial(object):
             #efetuado decremento do valor como no calculo do fatorial
             self.valor=self.valor-1
             #imprime o valor do fatorial em cada interacao
-            print "%s! = %s" % (self.valor, fatorial)
 
+            print "%s! = %s" % (self.valor, fatorial)
+        print"======================================"
+        print " valor fatorial = %s" %(fatorial)
+        print"======================================"
 #metodo main do python para chamar a funcao
 if __name__ == '__main__':
 
-    f =  CalculaFatorial(3)
+    f =  CalculaFatorial(4)
 
-    print " =========================="
-    print " o valor do fatorial e: "
-    print " =========================="
+    print"======================================"
+    print " o valor do fatorial incremental : "
+    print"======================================"
     #chamada da funcao
     f.fatorial()
-    print " =========================="
-    print " o valor do fatorial c/ biblioteca math: "
-    print " =========================="
+    print "o valor do fatorial c/ biblioteca math="
+
 
     '''chamada da funcao calculaFatorial
     passando por parametro o valor do fatorial
     a ser calculado'''
 
-    f.calculaFatorial(3)
+    f.calculaFatorial(4)
+    print"======================================="
 
 
