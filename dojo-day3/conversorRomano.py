@@ -28,6 +28,7 @@ as funcionalidade do Conversão de Romano para decimal '''
                     return self.resultante [2]
                 else:
                     print "valor invalido para valor de 1 caracter"
+            
             if tamanho == 2:
                 lista = []
                 lista = list(valor)
@@ -35,54 +36,35 @@ as funcionalidade do Conversão de Romano para decimal '''
                 print " =============================="
                 print " a lista é: " + str(lista)
                 print " =============================="
+                #print lista[0]
+                #print lista[1]
 
                 elemento1 = lista[0]
                 elemento2 = lista[1]
 
-                print elemento1
-                print elemento2
+                if elemento1 == 'I':
+                    el1 = int(self.resultante[0])
+                elif elemento1 == 'V':
+                    el1= int(self.resultante[1])
+                elif elemento1 == 'X':
+                    el1 = int(self.resultante[2])
 
-                if lista[0] == 'I':
-                    elemento1= self.resultante[0]
-                    #print elemento1
-                    return elemento1
+                if elemento2 == 'I':
+                    el2= int(self.resultante[0])
+                elif elemento2 == 'V':
+                    el2 = int(self.resultante[1])
+                elif elemento2 =='X':
+                    el2 = int(self.resultante[2])
 
-                elif lista[0]== 'V':
-                    elemento1= self.resultante[1]
-                    #print elemento1
-                    return elemento1
+                #print el1, el2
 
-                elif lista[0]== 'X':
-                    elemento1 = self.resultante[2]
-                    #print elemento1
-                    return elemento1
+                if int(el1) > int(el2):
+                    print el1 + el2
+                else:
+                    if int(el1) < int(el2):
+                        print  el2 - el1
 
-                elif lista[1]== 'I':
-                    elemento2= self.resultante[0]
-                    #print elemento2
-                    return elemento2
 
-                elif lista[1] == 'V':
-                    lemento2 =self.resultante[1]
-                    #print elemento2
-                    return elemento2
-
-                elif lista[1]=='X':
-                    elemento2 = self.resultante[2]
-                    #print elemento2
-                    return elemento2
-
-    def conversaoDecimal(self):
-        if elemento1 > elemento2:
-           
-            print (int(elemento1) + int(elemento2))
-            conversaoDecimal()
-        else:
-            if elemento1 < elemento2:
-                conversorDecimal()
-                #print elemento2
-                #print elemento1
-                print  (int(elemento2) - int(elemento1))
 
 
 if __name__ == "__main__":
