@@ -68,11 +68,11 @@ as funcionalidade do Conversão de Romano para decimal '''
 
 
 if __name__ == "__main__":
-#    print "valor decimal de V"
-#    print Conversor().conversorRomanoDecimal('V')
-#    print "valor decimal de X"
-#    print Conversor().conversorRomanoDecimal('X')
-#    print "valor decimal de I"
-#    print Conversor().conversorRomanoDecimal('I')
+    print "valor decimal de V"
+    print Conversor().conversorRomanoDecimal('V')
+    print "valor decimal de X"
+    print Conversor().conversorRomanoDecimal('X')
+    print "valor decimal de I"
+    print Conversor().conversorRomanoDecimal('I')
     print "valor decimal de IV", Conversor().conversorRomanoDecimal('IV')
     print "valor decimal de VI", Conversor().conversorRomanoDecimal('VI')
